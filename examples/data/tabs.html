@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <script src="../cdn/vue/vue.global.min.js"></script>
+
+  <link rel="stylesheet" href="../cdn/element-plus/index.css" />
+  <script src="../cdn/element-plus/index.full.min.js"></script>
+  <link rel="stylesheet" href="../../lib/index.css" />
+  <script src="../../lib/avue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <avue-data-tabs :option="option"></avue-data-tabs>
+  </div>
+</body>
+<script>
+
+  var app = Vue.createApp({
+    data() {
+      return {
+        option: {
+          data: [
+            {
+              title: '分类统计',
+              subtitle: '实时',
+              count: 7993,
+              allcount: 10222,
+              text: '当前分类总记录数',
+              color: 'rgb(27, 201, 142)',
+              key: '类'
+            },
+            {
+              title: '附件统计',
+              subtitle: '实时',
+              count: 3112,
+              allcount: 10222,
+              text: '当前上传的附件数',
+              color: 'rgb(230, 71, 88)',
+              key: '附'
+            },
+            {
+              title: '文章统计',
+              subtitle: '实时',
+              count: 908,
+              allcount: 10222,
+              text: '评论次数',
+              color: 'rgb(178, 159, 255)',
+              key: '评'
+            }
+          ]
+        },
+      }
+    },
+    created() {
+
+    },
+    methods: {
+
+    }
+  })
+  app.use(ElementPlus)
+  app.use(AVUE)
+  app.mount('#app')
+</script>
+
+</html>

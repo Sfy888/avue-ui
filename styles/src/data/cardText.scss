@@ -1,0 +1,26 @@
+.avue-data-cardText{
+    .item{
+        padding: 20px 25px;
+        margin: 10px 20px;
+        background: #F8F8F8;
+        border-radius:6px;
+        box-shadow: 2px 2px 20px #ccc;
+        &-header{
+          color: #000;
+          font-weight: bold;
+        }
+        &-content{
+            margin-top: 8PX;
+            font-size:14px;
+            line-height: 22px;
+            color:#333;
+        }
+        &-footer{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #999;
+        }
+    }
+}

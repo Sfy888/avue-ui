@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <script src="../cdn/vue/vue.global.min.js"></script>
+
+  <link rel="stylesheet" href="../cdn/element-plus/index.css" />
+  <script src="../cdn/element-plus/index.full.min.js"></script>
+  <link rel="stylesheet" href="../../lib/index.css" />
+  <script src="../../lib/avue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <avue-data-panel :option="option"></avue-data-panel>
+  </div>
+</body>
+<script>
+
+  var app = Vue.createApp({
+    data() {
+      return {
+        option: {
+          data: [
+            {
+              title: 'New Visits',
+              count: 102400,
+              icon: 'el-icon-message',
+              color: '#00a7d0',
+            },
+            {
+              title: 'Messages',
+              count: 81212,
+              icon: 'el-icon-info',
+              color: 'rgb(27, 201, 142)',
+            },
+            {
+              title: 'Purchases',
+              count: 9280,
+              icon: 'el-icon-success',
+              color: 'rgb(230, 71, 88)',
+            },
+            {
+              title: 'Shoppings',
+              count: 13600,
+              icon: 'el-icon-tickets',
+              color: 'rgb(178, 159, 255)',
+            },
+          ]
+        },
+      }
+    },
+    created() {
+
+    },
+    methods: {
+
+    }
+  })
+  app.use(ElementPlus)
+  app.use(AVUE)
+  app.mount('#app')
+</script>
+
+</html>
