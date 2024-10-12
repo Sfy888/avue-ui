@@ -1,5 +1,5 @@
 {
-  "name": "@chagee/avue-ui",
+  "name": "avue-ui",
   "version": "3.2.23",
   "description": "A Magic Configurable Web Framework",
   "main": "lib/avue.min.js",

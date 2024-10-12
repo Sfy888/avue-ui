@@ -1,24 +1,20 @@
 
-1. 维护时尽量不要修改原有props, 默认样式, 向下兼容, 只做新增。如果不新增要修改默认props, 可以复制组件开个新组件比如curd2
-2. 包名@chagee/avue推到公司私有源
-3. 项目里可以通过alias配置别名的方式使用
-  "@smallwei/avue": "@chagee/avue"
-
-
 <p align="center"><a href="https://avuejs.com" target="_blank" rel="noopener noreferrer"><img width="100" src="https://avuejs.com/images/logo-bg.jpg" alt="Avue logo"></a></p>
 
 ## 介绍
+
   Avue.js是基于现有的element-ui库进行的二次封装，从而简化一些繁琐的操作，核心理念为数据驱动视图,主要的组件库针对table表格和form表单场景，同时衍生出更多企业常用的组件，达到高复用，容易维护和扩展的框架，同时内置了丰富了数据展示组件，让开发变得更加容易.
 
 ### 浏览器兼容性
+
   支持所有符合ES5标准的浏览器(不支持IE8及以下版本）.
-  
+
 ## 文件
 
-| 文件名 | 用途 |
-|-------------|----------|
-| avue.min.js | 生产环境|
-| avue.js     | 开发环境|
+| 文件名      | 用途     |
+| ----------- | -------- |
+| avue.min.js | 生产环境 |
+| avue.js     | 开发环境 |
 
 ## 文档
 
