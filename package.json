@@ -19,14 +19,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://gitee.com/smallweigit/avue.git"
+    "url": "git+https://github.com/Sfy888/avue-ui.git"
   },
   "author": "smallwei",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitee.com/smallweigit/avue/issues"
+    "url": "https://github.com/Sfy888/avue-ui/issues"
   },
-  "homepage": "https://gitee.com/smallweigit/avue/blob/master/README.md",
+  "homepage": "https://github.com/Sfy888/avue-ui/blob/master/README.md",
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.11.4",
