@@ -113,7 +113,7 @@ export default create({
       return this.$refs.cascader.getCheckedNodes(leafOnly)
     },
     handleValueChange (val) {
-      setTimeout(() => {
+      this.$nextTick(() => {
         let $parent = this.$parent.$parent
         if (!this.validatenull(val) && $parent && this.rules) {
           $parent?.clearValidate()
