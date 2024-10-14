@@ -116,9 +116,9 @@ export default create({
       this.$nextTick(() => {
         let $parent = this.$parent.$parent
         if (!this.validatenull(val) && $parent && this.rules) {
-          $parent?.clearValidate()
+            $parent && $parent.validate()
         } else if (this.validatenull(val)) {
-          $parent?.validate();
+            $parent?.validate();
         }
       })
     },
